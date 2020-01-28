@@ -3,10 +3,9 @@ package com.company;
 
 public class FibonacciExecute {
 
-    public static String ERROR_CODE="Error no negative numbers are accepted\n";
+    public static String ERROR_CODE = "Error no negative numbers are accepted\n";
 
-    public static int execute(int fibonacciCardinal ) {
-
+    public static int execute(int fibonacciCardinal) {
 
 
         if (fibonacciCardinal < 0) {

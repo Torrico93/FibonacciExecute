@@ -2,10 +2,9 @@ package com.company;
 
 import java.util.Scanner;
 
-import static com.company.FibonacciExecute.execute;
+import static com.company.FibonacciExecutor.execute;
 
-
-public class FibonacciProgram {
+public class FibonacciApplication {
 
     public static void main(String[] args) {
 
@@ -14,7 +13,6 @@ public class FibonacciProgram {
         int fibonacciCardinal = scanner.nextInt();
 
         System.out.println(execute(fibonacciCardinal));
-
 
     }
 }
