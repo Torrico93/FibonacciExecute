@@ -1,30 +1,29 @@
 package com.company;
 
-import java.util.Scanner;
 
 public class FibonacciExecute {
 
-    public static int execute(int numeroFibo) {
+    public static String ERROR_CODE="Error no negative numbers are accepted\n";
 
-        if (numeroFibo < 0) {
-            return 99999;
-        } else if (numeroFibo > 0 && numeroFibo <= 2) {
-            return 1;
-        } else {
-            return  execute(numeroFibo-1)+ execute(numeroFibo-2);
+    public static int execute(int fibonacciCardinal ) {
+
+
+
+        if (fibonacciCardinal < 0) {
+            return Integer.parseInt(ERROR_CODE);
         }
 
-    }
-
-    public static void main(String[] args) {
-
-        Scanner scanner = new Scanner(System.in);
-        
-        int numeroFibo = scanner.nextInt();
-
-        System.out.println(execute(numeroFibo));
-
+        if (fibonacciCardinal > 0 && fibonacciCardinal <= 2) {
+            return 1;
+        } else {
+            return execute(fibonacciCardinal - 1) + execute(fibonacciCardinal - 2);
+        }
 
 
     }
+
+
 }
+
+
+
